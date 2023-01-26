@@ -1,2 +1,2 @@
 # config-files
-PickleEvan's dotfiles, and other configs
+PickleEvan's dotfiles, .conf's, and other configs
