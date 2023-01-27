@@ -177,9 +177,9 @@ alias why="(while :; do echo -ne 0; done) | lolcat"
 alias rm="trash"
 
 # exa
-alias ls="exa --long --no-permissions --group-directories-first"
-alias la="exa --long --no-permissions --group-directories-first -a"
-alias lr="exa --long --no-permissions --group-directories-first -R"
+alias ls="exa --long --no-permissions --time=modified --group-directories-first"
+alias la="exa --long --no-permissions --time=modified --group-directories-first -a"
+alias lr="exa --long --no-permissions --time=modified --group-directories-first -R"
 alias tree="exa --group-directories-first --tree"
 
 # grep
