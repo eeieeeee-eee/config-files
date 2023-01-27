@@ -176,8 +176,11 @@ alias why="(while :; do echo -ne 0; done) | lolcat"
 # trash
 alias rm="trash"
 
-# ls
-alias la="ls -a"
+# exa
+alias ls="exa --long --no-permissions --group-directories-first"
+alias la="exa --long --no-permissions --group-directories-first -a"
+alias lr="exa --long --no-permissions --group-directories-first -R"
+alias tree="exa --group-directories-first --tree"
 
 # grep
 alias grep="grep --color=auto"
