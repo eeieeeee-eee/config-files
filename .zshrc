@@ -101,7 +101,7 @@ eval "$(starship init zsh)"
 function nvim(){
 OWNER=$(stat -c '%U' $1)
 if [[ "$OWNER" == "root" ]]; then
-sudo /usr/bin/nvim $*;    # note: [safer] sudo -e forces into edit only mode, does not allow executing cmds
+doas -- /usr/bin/nvim $*;    # note: [safer] sudo -e forces into edit only mode, does not allow executing cmds
 else
 /usr/bin/nvim $*;
 fi
@@ -152,6 +152,9 @@ alias pop="brl strat pop"
 alias p="brl strat pop"
 alias arch="brl strat arch"
 alias a="brl strat arch"
+
+# sudo doas
+alias sudo="doas --"
 
 # package managment
 alias suy="yay -Suy --noconfirm"
