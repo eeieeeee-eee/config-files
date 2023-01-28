@@ -186,6 +186,9 @@ alias tree="exa --group-directories-first --tree"
 # grep
 alias grep="grep --color=auto"
 
+# bat
+alias cat="bat"
+
 # safety
 alias cp="cp -i"
 alias mv="mv -i"
