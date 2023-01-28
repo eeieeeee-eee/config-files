@@ -173,8 +173,9 @@ alias why="(while :; do echo -ne 0; done) | lolcat"
 
 ## Navigation and Files
 
-# trash
+# trash rm
 alias rm="trash"
+alias rem='"rm"'
 
 # exa
 alias ls="exa --long --no-permissions --time=modified --group-directories-first"

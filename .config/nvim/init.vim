@@ -71,6 +71,14 @@ let g:ale_linters = {'asm':[]}
 colorscheme dracula
 
 """"""""""""""""
+"Remap keys
+map i <Up>
+map j <Left>
+map k <Down>
+map l <Right>
+map h <insert>
+
+""""""""""""""""
 "Commands
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
