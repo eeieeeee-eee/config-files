@@ -168,6 +168,9 @@ alias vim="nvim"
 alias off="sudo shutdown now"
 alias on="sudo reboot now"
 
+# clear
+alias cl="clear"
+
 # other
 alias why="(while :; do echo -ne 0; done) | lolcat"
 
