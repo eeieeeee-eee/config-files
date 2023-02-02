@@ -178,9 +178,9 @@ alias rm="trash"
 alias rem='"rm"'
 
 # exa
-alias ls="exa --long --no-permissions --time=modified --group-directories-first"
-alias la="exa --long --no-permissions --time=modified --group-directories-first -a"
-alias lr="exa --long --no-permissions --time=modified --group-directories-first -R"
+alias ls="exa --long --no-permissions --time=modified --group-directories-first --icons"
+alias la="exa --long --no-permissions --time=modified --group-directories-first --icons -a"
+alias lr="exa --long --no-permissions --time=modified --group-directories-first --icons -R"
 alias tree="exa --group-directories-first --tree"
 
 # grep
@@ -188,6 +188,9 @@ alias grep="grep --color=auto"
 
 # bat
 alias cat="bat"
+
+# bpytop
+alias htop="bpytop"
 
 # safety
 alias cp="cp -i"

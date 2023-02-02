@@ -5,7 +5,7 @@ lua require ('init')
 "Vim-Plug
 call plug#begin()
 
-Plug 'ycm-core/YouCompleteMe'
+Plug 'ms-jpq/coq_nvim'
 Plug 'dracula/vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'yegappan/mru'
