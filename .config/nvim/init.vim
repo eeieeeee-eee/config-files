@@ -22,6 +22,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'sirtaj/vim-openscad'
+Plug 'baskerville/vim-sxhkdrc'
 
 call plug#end()
 syntax enable
