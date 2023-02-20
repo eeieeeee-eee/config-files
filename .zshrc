@@ -187,6 +187,13 @@ alias la="exa --long --no-permissions --time=modified --group-directories-first 
 alias lr="exa --long --no-permissions --time=modified --group-directories-first --icons -R"
 alias tree="exa --group-directories-first --tree"
 
+# cd
+alias ..="cd .."
+alias ...="cd ../.."
+alias 3.="cd ../../.."
+alias 4.="cd ../../../.."
+alias 5.="cd ../../../../.."
+
 # grep
 alias grep="grep --color=auto"
 
