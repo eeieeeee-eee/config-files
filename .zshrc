@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="dracula"
+#ZSH_THEME="dracula"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -63,18 +63,33 @@ autoload -U colors && colors
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-vi-mode zsh-autocomplete)
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
 
+# if the init script doesn't exist
+if ! zgen saved; then
+
+  # specify plugins here
+  zgen oh-my-zsh
+
+  # plugins
+  zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/sudo
+  zgen oh-my-zsh plugins/command-not-found
+  zgen load zsh-users/zsh-syntax-highlighting
+  
+  # theme
+  zgen oh-my-zsh zsh-users/dracula
+
+  # generate the init script from plugins above
+  zgen save
+fi
+
+
+# load omz
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -148,12 +163,10 @@ ex ()
 # git bare repo dotfiles
 alias conf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-# bedrock linux specific
-alias pop="brl strat pop"
-alias p="brl strat pop"
-alias arch="brl strat arch"
-alias a="brl strat arch"
-
+# nix
+alias hmr="home-manager switch --flake home#evan"
+alias hme="nvim ~/.config/nixpkgs/home.nix"
+#
 # sudo doas
 alias sudo="doas --"
 
