@@ -1,0 +1,15 @@
+{
+  "flakes": [
+    {
+      "from": {
+        "id": "home",
+        "type": "indirect"
+      },
+      "to": {
+        "path": "/home/evan/.config/nixpkgs",
+        "type": "path"
+      }
+    }
+  ],
+  "version": 2
+}
