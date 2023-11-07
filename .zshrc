@@ -194,7 +194,7 @@ alias why="(while :; do echo -ne 0; done) | lolcat"
 ## Navigation and Files
 
 # trash rm
-alias rm="trash --"
+alias rm="trash"
 alias rem='"rm"'
 
 # exa
