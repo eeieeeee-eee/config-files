@@ -164,15 +164,18 @@ ex ()
 alias conf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # nix
-alias hmr="home-manager switch --flake home#evan"
-alias hme="nvim ~/.config/nixpkgs/home.nix"
+#alias hmr="home-manager switch --flake home#evan"
+#alias hme="nvim ~/.config/nixpkgs/home.nix"
 #
 # sudo doas
 alias sudo="doas --"
 
 # package managment
-alias suy="yay -Suy --noconfirm"
-alias autoremove="sudo pacman -Rns $(pacman -Qtdq)"
+#alias suy="yay -Suy --noconfirm"
+#alias autoremove="sudo pacman -Rns $(pacman -Qtdq)"
+
+# homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # vim
 alias vi="nvim"
