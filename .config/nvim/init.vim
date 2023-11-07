@@ -6,6 +6,7 @@ lua require ('init')
 call plug#begin()
 
 Plug 'ms-jpq/coq_nvim'
+Plug 'ms-jpq/coq.artifacts'
 Plug 'dracula/vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'yegappan/mru'
