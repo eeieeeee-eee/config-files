@@ -22,7 +22,9 @@ Plug 'preservim/tagbar'
 Plug 'junegunn/fzf'
 Plug 'dense-analysis/ale'
 Plug 'sirtaj/vim-openscad'
+Plug 'udalov/kotlin-vim'
 Plug 'baskerville/vim-sxhkdrc'
+Plug 'ekalinin/Dockerfile.vim'
 
 call plug#end()
 syntax enable
