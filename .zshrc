@@ -181,6 +181,13 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 alias vi="nvim"
 alias vim="nvim"
 
+# pip
+export PATH="$PATH:/home/username/.local/bin"
+
+# mojo
+export MODULAR_HOME="$HOME/.modular"
+export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
+
 # power options
 alias off="sudo shutdown now"
 alias on="sudo reboot now"
