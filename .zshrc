@@ -182,7 +182,7 @@ alias vi="nvim"
 alias vim="nvim"
 
 # pip
-export PATH="$PATH:/home/username/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # mojo
 export MODULAR_HOME="$HOME/.modular"
