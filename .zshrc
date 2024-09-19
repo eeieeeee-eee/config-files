@@ -150,6 +150,25 @@ ex ()
   fi
 }
 
+#### exa - Color Scheme Definitions
+
+export EXA_COLORS="\
+uu=36:\
+gu=37:\
+sn=32:\
+sb=32:\
+da=34:\
+ur=34:\
+uw=35:\
+ux=36:\
+ue=36:\
+gr=34:\
+gw=35:\
+gx=36:\
+tr=34:\
+tw=35:\
+tx=36:"
+
 ##ALIASES
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -227,5 +246,5 @@ alias cat="bat"
 alias htop="bpytop"
 
 # safety
-alias cp="cp -i"
+alias cp="cp -ir"
 alias mv="mv -i"
